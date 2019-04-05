@@ -2,10 +2,15 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107281616-2"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-107281616-2"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
 
       gtag('config', 'UA-107281616-2');
@@ -32,13 +37,22 @@
       content="http://johnnyreina.com/announcement/index.html"
     />
     <script>
-      const arr = [...'APRILFOOLS!'];
+      const arr = [
+        ...'APRILFOOLS!',
+        "That's it. Thanks for playing <3",
+        5,
+        4,
+        3,
+        2,
+        1
+      ];
       let idx = -1;
-      while (1) {
-        alert(
-          ++idx < arr.length ? arr[idx] : "That's it. Thanks for playing <3"
-        );
+      while (idx < arr.length - 1) {
+        alert(arr[++idx]);
       }
+      setTimeout(() => {
+        document.location = 'https://github.com/jreina/announcement';
+      }, 2000);
     </script>
   </head>
   <body></body>
